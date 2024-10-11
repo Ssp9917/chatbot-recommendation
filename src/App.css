@@ -1,0 +1,86 @@
+.bpFabContainer {
+  width: var(--bpSpacing-16);
+  height: var(--bpSpacing-16);
+  border-radius: calc(var(--bpRadius-scale)*var(--bpRadius-full));
+  cursor: pointer;
+  background: var(--fab-bg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bpContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  border-color: var(--bpGray-200);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+  border-radius: calc(var(--bpRadius-scale)*var(--bpRadius-md));
+  container-type: inline-size;
+  width: 30%;
+}
+
+.bpMessageListMarqueeContainer {
+  margin-top: 0 !important;
+  display: flex;
+  gap: var(--bpSpacing-2);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: var(--bpSpacing-12);
+  color: #fff !important;
+}
+
+.bpMessageListMarqueeTitle {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.bpMessageListMarqueeDescription {
+  color: #ffffff;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  margin-top: var(--bpSpacing-1);
+}
+
+.bpHeaderContainer {
+  display: flex;
+  padding: var(--bpSpacing-1);
+  flex-direction: column;
+  border-top-left-radius: calc(var(--bpRadius-scale) * var(--bpRadius-md));
+  border-top-right-radius: calc(var(--bpRadius-scale) * var(--bpRadius-md));
+  background-color: blue;
+  box-shadow: 0 1px 3px #0000001a, 0 1px 2px #0000000f;
+}
+
+.bpHeaderContentTitle {
+  color: #ffffff;
+}
+
+.bpHeaderContentDescription {
+  color: #ffffff;
+}
+
+.bpHeaderContentActionsIcons {
+  padding: var(--bpSpacing-2);
+  height: var(--bpSpacing-9);
+  width: var(--bpSpacing-9);
+  border-radius: calc(var(--bpRadius-scale) * var(--bpRadius-md));
+  cursor: pointer;
+  color: #ffffff;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+.bpComposerInput::placeholder{
+  color: #000 !important;
+}
