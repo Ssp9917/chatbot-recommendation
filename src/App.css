@@ -84,3 +84,12 @@
 .bpComposerInput::placeholder{
   color: #000 !important;
 }
+
+@media screen and (max-width:768px) {
+  body{
+    justify-content: flex-start;
+  }
+  .bpContainer{
+    width: 100%;
+  }
+}
